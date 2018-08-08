@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #f3f3f3;
+    font-size: 15px;
+}
+body{
+    background:linear-gradient(rgb(69, 245, 245), rgb(14, 204, 93));
+    min-height: 100vh;
+}
+.contenedor-login{
+    margin:15px auto;
+    width: 100%;
+    max-width: 410px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.514);
+    border-radius: 7px;
+    padding: 5px;
+}
+.contenedor-escudo img{
+    display: block;
+    margin: 15px auto;
+    width: 110px;
+}
+.form-login{
+    display: flex;
+    width: 100%;
+    height: 380px;
+    /* padding: 30px; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 23px;
+}
+.inputContainer{
+    width: 230px;
+    height: 40px;
+    margin: 10px auto;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputContainer>img{
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+input.user,
+input.pwd{
+    display: block;
+    width: 200px;
+    height: 36px;
+    color: black;
+    border: none;
+    padding-left: 5px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+}
+.pwd-lost-link{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+.btn-login{
+    display: block;
+    text-align: center;
+    /* margin: 25px auto; */
+    width: 150px;
+    height: 35px;
+    background: linear-gradient(to top, rgb(69, 245, 245), rgb(14, 204, 93));
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+}
+.btn-login:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+/* @media (max-width:768px){
+} */
+/* @media (max-width:480px){
+    input.user,
+    input.pwd{
+        width: 80%;
+    }
+} */
